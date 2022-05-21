@@ -1,0 +1,100 @@
+.App {
+  margin: 2rem;
+}
+
+.solution-container {
+  border-top: 1px solid black;
+  margin-top: 1rem;
+}
+
+.exercise-1-div {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.exercise-3-button {
+  margin: 20px;
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+}
+
+.exercise-3-button:hover {
+  cursor: pointer;
+}
+
+.exercise-6-div {
+  background-color: coral;
+  width: 320px;
+  line-height: 25px;
+}
+
+.exercise-6-div p {
+  color: white;
+  margin: 0;
+}
+
+.exercise-7-container {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.exercise-7-container div:first-child {
+  margin-top: 15px;
+}
+
+.first-name-container,
+.last-name-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.exercise-7-container label {
+  margin-right: 5px;
+}
+
+.exercise-7-container input {
+  padding: 5px;
+}
+
+.exercise-7-container button {
+  max-width: fit-content;
+  margin: 15px auto;
+}
+
+.exercise-8-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exercise-8-list p {
+  margin-left: 5px;
+}
+
+.exercise-9-list li {
+  background-color: green;
+  margin-bottom: 15px;
+  width: 600px;
+}
+
+.exercise-9-list p {
+  margin-left: 10px;
+}
