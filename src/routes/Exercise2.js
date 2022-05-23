@@ -1,6 +1,6 @@
 function Exercise2() {
   function handlePrint() {
-    console.log("You cliked me. Thanks!");
+    alert("You cliked me. Thanks!");
   }
   return (
     <div>

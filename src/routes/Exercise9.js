@@ -6,7 +6,7 @@ function Exercise9() {
   useEffect(function () {
     fetch("https://random-data-api.com/api/users/random_user?size=10")
       .then((response) => response.json())
-      .then((data) => setUsers(Object.assign(data)));
+      .then((data) => setUsers(data));
   }, []);
   return (
     <div>
@@ -26,6 +26,9 @@ function Exercise9() {
             {users.map(function (elem, index) {
               return (
                 <li key={index}>
+                  {/* {Object.keys(elem).forEach((k) => {
+                    return <p>{elem.k}</p>;
+                  })} */}
                   <p>id: {elem.id}</p>
                   <p>uid: {elem.uid}</p>
                   <p>password: {elem.password}</p>

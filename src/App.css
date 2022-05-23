@@ -33,10 +33,11 @@
   cursor: pointer;
 }
 
-.exercise-6-div {
+.exercise-6-li {
   background-color: coral;
   width: 320px;
   line-height: 25px;
+  padding-left: 10px;
 }
 
 .exercise-6-div p {
@@ -87,6 +88,11 @@
 
 .exercise-8-list p {
   margin-left: 5px;
+}
+
+.exercise-8-div {
+  border: "1px solid black";
+  width: "250px";
 }
 
 .exercise-9-list li {

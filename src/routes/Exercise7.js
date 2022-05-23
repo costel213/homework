@@ -3,13 +3,13 @@ import { useState } from "react";
 function Exercise7() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  function handleGreeting() {
+  function handleGreetingClick() {
     alert(`Hello, ${firstName} ${lastName}!`);
   }
-  function handleFirstName(event) {
+  function handleFirstNameChange(event) {
     setFirstName(event.target.value);
   }
-  function handleLastName(event) {
+  function handleLastNameChange(event) {
     setLastName(event.target.value);
   }
   return (
@@ -29,7 +29,7 @@ function Exercise7() {
               <input
                 type="text"
                 value={firstName}
-                onChange={handleFirstName}
+                onChange={handleFirstNameChange}
                 placeholder="First Name"
               />
             </div>
@@ -38,11 +38,11 @@ function Exercise7() {
               <input
                 type="text"
                 value={lastName}
-                onChange={handleLastName}
+                onChange={handleLastNameChange}
                 placeholder="Last Name"
               />
             </div>
-            <button onClick={handleGreeting}>Greet Me</button>
+            <button onClick={handleGreetingClick}>Greet Me</button>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { CodeBlock, dracula } from "react-code-blocks";
+import User from "../components/User";
 
 function Exercise8() {
   //If you want to use me, be aware I am a string not an Array.
@@ -69,11 +70,6 @@ function Exercise8() {
     },
   ];
 
-  const elemStyle = {
-    border: "1px solid black",
-    width: "250px",
-  };
-
   return (
     <div>
       <div>
@@ -92,14 +88,8 @@ function Exercise8() {
 
         <div className="solution-container">
           <ul className="exercise-8-list">
-            {usersArray.map(function (elem, index) {
-              return (
-                <li style={elemStyle} key={index}>
-                  <p>id: {elem.id}</p>
-                  <p style={{ color: elem.favoriteColor }}>name: {elem.name}</p>
-                  <p>favoriteColor: {elem.favoriteColor}</p>
-                </li>
-              );
+            {usersArray.map(function (elem) {
+              return <User user={elem} key={elem.id}></User>;
             })}
           </ul>
         </div>

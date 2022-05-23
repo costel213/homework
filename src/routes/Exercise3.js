@@ -1,16 +1,7 @@
+import Button from "../components/CustomButton";
+
 function Exercise3() {
-  function handleAlert1() {
-    alert("Button 1");
-  }
-  function handleAlert2() {
-    alert("Button 2");
-  }
-  function handleAlert3() {
-    alert("Button 3");
-  }
-  function handleAlert4() {
-    alert("Button 4");
-  }
+  const buttonNameArray = ["Button 1", "Button 2", "Button 3", "Button 4"];
   return (
     <div>
       <div>
@@ -21,18 +12,9 @@ function Exercise3() {
         </p>
       </div>
       <div className="solution-container">
-        <button className="exercise-3-button" onClick={handleAlert1}>
-          Button 1
-        </button>
-        <button className="exercise-3-button" onClick={handleAlert2}>
-          Button 2
-        </button>
-        <button className="exercise-3-button" onClick={handleAlert3}>
-          Button 3
-        </button>
-        <button className="exercise-3-button" onClick={handleAlert4}>
-          Button 4
-        </button>
+        {buttonNameArray.map(function (elem, index) {
+          return <Button buttonName={elem} key={index}></Button>;
+        })}
       </div>
     </div>
   );

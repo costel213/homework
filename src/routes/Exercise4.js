@@ -4,7 +4,6 @@ function Exercise4() {
   const [count, setCount] = useState(1);
   function handleCount() {
     setCount(count + 1);
-    console.log("clicks = " + count);
   }
   return (
     <div>
@@ -15,6 +14,7 @@ function Exercise4() {
         </p>
         <div className="solution-container">
           <button onClick={handleCount}>Count</button>
+          <p>{count}</p>
         </div>
       </div>
     </div>

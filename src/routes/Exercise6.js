@@ -1,5 +1,5 @@
 import { CodeBlock, dracula } from "react-code-blocks";
-import User from "../components/User";
+import UsersList from "../components/UsersList";
 
 function Exercise6() {
   //If you want to use me, be aware I am a string not an Array.
@@ -41,9 +41,7 @@ function Exercise6() {
           accordingly.
         </p>
         <div className="solution-container">
-          {usersArray.map(function (elem, index) {
-            return <User key={index} user={elem}></User>;
-          })}
+          <UsersList usersList={usersArray}></UsersList>
         </div>
       </div>
     </div>
